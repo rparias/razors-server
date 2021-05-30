@@ -1,5 +1,5 @@
 'use strict';
-const stripe = require('stripe')('sk_test_secret_key')
+const stripe = require('stripe')(`${process.env.STRIPE_SECRET_KEY}`)
 
 /**
  * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-controllers)
